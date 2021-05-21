@@ -8,6 +8,11 @@ void Game::CreateOpponents() {
   opponents.push_back(std::make_unique<Opponent>(290, 50));
   opponents.push_back(std::make_unique<Opponent>(350, 50));
   opponents.push_back(std::make_unique<Opponent>(410, 50));
+  opponents.push_back(std::make_unique<Opponent>(470, 50));
+  opponents.push_back(std::make_unique<Opponent>(530, 50));
+  opponents.push_back(std::make_unique<Opponent>(590, 50));
+  opponents.push_back(std::make_unique<Opponent>(650, 50));
+  opponents.push_back(std::make_unique<Opponent>(710, 50));
 }
 
 void Game::CreateStars() {
