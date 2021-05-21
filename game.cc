@@ -41,25 +41,25 @@ void Game::LaunchProjectiles() {
 void Game::UpdateScreen() {
   screen.DrawRectangle(0, 0, 800, 600, 0, 0, 0);
   for (int i = 0; i < stars.size(); i++) {
-      stars[i]->Draw(screen);
+    stars[i]->Draw(screen);
   }
   if (daplaya.GetIsActive()) {
     daplaya.Draw(screen);
   }
   for (int i = 0; i < opponents.size(); i++) {
-      opponents[i]->Draw(screen);
+    opponents[i]->Draw(screen);
   }
   for (int i = 0; i < oprojectiles.size(); i++) {
-      oprojectiles[i]->Draw(screen);
+    oprojectiles[i]->Draw(screen);
   }
   for (int i = 0; i < pprojectiles.size(); i++) {
-      pprojectiles[i]->Draw(screen);
+    pprojectiles[i]->Draw(screen);
   }
   for (int i = 0; i < leftprojectiles.size(); i++) {
-      leftprojectiles[i]->Draw(screen);
+    leftprojectiles[i]->Draw(screen);
   }
   for (int i = 0; i < rightprojectiles.size(); i++) {
-      rightprojectiles[i]->Draw(screen);
+    rightprojectiles[i]->Draw(screen);
   }
 
   if (!HasLost()) {
@@ -216,7 +216,7 @@ void Game::OnMouseEvent(const graphics::MouseEvent &event) {
       pprojectiles.push_back(std::make_unique<PlayerProjectile>(
           daplaya.GetX(), daplaya.GetY() + 20));
       pprojectiles.push_back(std::make_unique<PlayerProjectile>(
-          daplaya.GetX() + 48, daplaya.GetY() +20));
+          daplaya.GetX() + 48, daplaya.GetY() + 20));
     }
     tracker++;
 

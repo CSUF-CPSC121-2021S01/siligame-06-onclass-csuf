@@ -49,6 +49,4 @@ std::unique_ptr<class OpponentProjectile> Opponent::LaunchProjectile() {
   return nullptr;
 }
 
-void Opponent::ReduceHP() {
-  hp--;
-}
+void Opponent::ReduceHP() { hp--; }
