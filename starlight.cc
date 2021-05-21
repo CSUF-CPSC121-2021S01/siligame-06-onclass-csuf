@@ -1,7 +1,7 @@
 #include "starlight.h"
 
 void Starlight::Draw(graphics::Image &image) {
-  image.DrawRectangle(x_, y_, 2, 2, 200, 200, 200);
+  image.DrawRectangle(x_, y_, 2, 2, 185, 185, 185);
 }
 
 void Starlight::Move(const graphics::Image &image) {
